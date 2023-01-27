@@ -1,0 +1,25 @@
+m = 0
+print("Введите количество введенных чисел:")
+count = int(input())
+print("Введите операцию: ")
+k = input()
+print("Введите число: ")
+n = int(input())
+for i in range(count-1):
+    print("Введите число: ")
+    a = int(input())
+    if a != 0:
+        if (k == '+'):
+            m = n + a
+        elif (k == '-'):
+            m = n - a
+        elif (k == '/'):
+            m = n / a
+        elif (k == '*'):
+            m = n * a
+        else:
+            print ("Операция была введена неверно!")
+    else:
+        print ("На ноль делить нельзя!")
+        n = a
+print("Ответ: " + m)
